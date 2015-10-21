@@ -1,3 +1,4 @@
+import os
 import sys
 from bottle import Bottle
 from bottle import run
@@ -7,7 +8,6 @@ from bottle import redirect
 from bruce import Bruce
 from PIL import Image
 
-import os
 import cStringIO
 
 
@@ -48,5 +48,6 @@ class BruceApp(Bottle):
 
 
 if __name__ == "__main__":
-    application = BruceApp("0.0 Uber-Alpha")
-    application.run(host='0.0.0.0', port=80, debug=True)
+    app = BruceApp("0.0 Uber-Alpha")
+    application.run = app.run(host='0.0.0.0', port=80, debug=True)
+    application.run()
