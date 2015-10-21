@@ -1,0 +1,18 @@
+body {
+    padding-top: 0px;
+}
+.wide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wide img {
+    width: 100%;
+}
+
+.header-title h1 {
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 1px 1px 4px rgba(34,34,34,0.6);
+    font-size: 3.75rem;
+}
