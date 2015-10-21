@@ -1,4 +1,5 @@
 import os
+os.chdir(os.path.dirname(__file__))
 import sys
 from bottle import Bottle
 from bottle import run
@@ -49,6 +50,6 @@ class BruceApp(Bottle):
 
 appliction = BruceApp("0.0 Uber-Alpha")
 
-if __name__ == "__main__":
-    application.run()
+# if __name__ == "__main__":
+#     application.run()
 
