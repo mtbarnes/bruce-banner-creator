@@ -14,7 +14,7 @@ import cStringIO
 
 class BruceApp(Bottle):
     def __init__(self):
-        super(BruceApp).__init__()
+        super(BruceApp, self).__init__()
         self.staticpath = os.path.join(os.path.dirname(__file__), 'static')
         self.route('/', callback=self.landing_index)
         self.route('/working', callback=self.make_main_banner)
