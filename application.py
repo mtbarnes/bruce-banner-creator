@@ -13,10 +13,9 @@ import cStringIO
 
 
 class BruceApp(Bottle):
-    def __init__(self, version):
-        super(BruceApp, self).__init__()
+    def __init__(self):
+        super(BruceApp).__init__()
         self.staticpath = os.path.join(os.path.dirname(__file__), 'static')
-        self.version = version
         self.route('/', callback=self.landing_index)
         self.route('/working', callback=self.make_main_banner)
         self.route('/static/<filename:path>', callback=self.send_static)
@@ -45,10 +44,10 @@ class BruceApp(Bottle):
         # return template(sendimage, imdata = imdata)
 
     def landing_index(self):
-        return template('index', version=self.version)
+        return template('index', version='0.1')
 
 
-appliction = BruceApp("0.0 Uber-Alpha")
+appliction = BruceApp()
 
 # if __name__ == "__main__":
 #     application.run()
