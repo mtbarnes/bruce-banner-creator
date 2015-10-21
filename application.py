@@ -44,9 +44,9 @@ class BruceApp(Bottle):
         # return template(sendimage, imdata = imdata)
 
     def landing_index(self):
-
         return template('index', version=self.version)
 
-if __name__ == "main":
+
+if __name__ == "__main__":
     application = BruceApp("0.0 Uber-Alpha")
-    application.run(host='0.0.0.0')
+    application.run(host='0.0.0.0', port=80, debug=True)
