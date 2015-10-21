@@ -48,4 +48,4 @@ class BruceApp(Bottle):
         return template('index', version=self.version)
 
 bruceapp = BruceApp("0.0 Uber-Alpha")
-run(bruceapp, host=sys.argv[1], port='8088', debug=True, reloader=True)
+run(bruceapp, host=sys.argv[1], port='80')
