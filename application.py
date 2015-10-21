@@ -47,7 +47,8 @@ class BruceApp(Bottle):
         return template('index', version=self.version)
 
 
+appliction = BruceApp("0.0 Uber-Alpha")
+
 if __name__ == "__main__":
-    app = BruceApp("0.0 Uber-Alpha")
-    application.run = app.run(host='0.0.0.0', port=80, debug=True)
     application.run()
+
