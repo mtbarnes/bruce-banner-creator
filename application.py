@@ -44,7 +44,7 @@ class BruceApp(Bottle):
         # return template(sendimage, imdata = imdata)
 
     def landing_index(self):
-        
+
         return template('index', version=self.version)
 
 application = BruceApp("0.0 Uber-Alpha")
