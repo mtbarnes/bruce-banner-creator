@@ -1,6 +1,6 @@
 from web import BruceApp
-import sys
+# import sys
 
-sys.path.insert(0, "/opt/python/current/app/")
+# sys.path.insert(0, "/opt/python/current/app/")
 
 application = BruceApp()
