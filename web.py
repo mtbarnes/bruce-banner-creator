@@ -17,11 +17,11 @@ class BruceApp(Bottle):
         self.staticpath = os.path.join(os.path.dirname(__file__), "static")
         self.route('/', callback=self.landing_index)
         self.route('/working', callback=self.make_main_banner)
-        self.route('/static/<filename:path>', callback=self.send_static)
+        # self.route('/static/<filename:path>', callback=self.send_static)
         self.bruce = Bruce("test.jpg")
 
-    def send_static(self, filename):
-        return static_file(filename, self.staticpath)
+    # def send_static(self, filename):
+    #     return static_file(filename, self.staticpath)
 
     def make_main_banner(self):
         # f = cStringIO.StringIO()
