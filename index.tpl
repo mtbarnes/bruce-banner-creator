@@ -13,7 +13,7 @@
     <meta name="description" content="Bruce main page">
   </head>
   <body>
-   <div class="wide" style="background-image: url('/static/banner.png');">
+   <div class="wide" style="background-image: url('/static/banner.jpg');">
     <div class="container">
      <div class="row">
       <div class="col-md-12 text-center header-title" style="padding:50px;">
@@ -32,13 +32,13 @@
        <div class="col-md-12 text-center center-block">
 	 <div class="well">
 	   <h1> Colors: </h1>
-	   <img class="img-responsive center-block", src="/static/pal.png" />
+	   <img class="img-responsive center-block", src="/static/pal.jpg" />
 	 </div>
 	 <div class="well">
 	   <h2>Previous banner and palette: </h2>
-           <img class="img-responsive center-block", src="/static/prev_banner.png" />
+           <img class="img-responsive center-block", src="/static/prev_banner.jpg" />
 	   <br>
-	   <img class="img-responsive center-block", src="/static/prev_pal.png" />
+	   <img class="img-responsive center-block", src="/static/prev_pal.jpg" />
 	 </div>
        </div>
      </div>

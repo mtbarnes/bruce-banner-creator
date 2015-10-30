@@ -5,6 +5,7 @@
 *.pyc
 *.ipynb
 *.zip
+*.wsgi
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

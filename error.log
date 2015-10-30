@@ -1,0 +1,222 @@
+[Thu Oct 29 19:31:18.565715 2015] [wsgi:error] [pid 19014:tid 140368229484288] [client 127.0.0.1:56965] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:34:15.882936 2015] [wsgi:error] [pid 19014:tid 140368204306176] [client ::1:48808] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:41:16.329301 2015] [wsgi:error] [pid 19014:tid 140368121165568] [client ::1:48809] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:41:21.116919 2015] [wsgi:error] [pid 19014:tid 140368112772864] [client ::1:48810] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:44:47.452209 2015] [wsgi:error] [pid 19014:tid 140368104380160] [client ::1:48811] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:53:13.221088 2015] [wsgi:error] [pid 20795:tid 140335321683712] [client ::1:48813] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 19:53:51.148035 2015] [wsgi:error] [pid 20796:tid 140335204185856] [client ::1:48815] Truncated or oversized response headers received from daemon process 'bruceproc': /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 20:01:08.001485 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] Traceback (most recent call last):
+[Thu Oct 29 20:01:08.001544 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:01:08.001558 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     return route.call(**args)
+[Thu Oct 29 20:01:08.001570 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:01:08.001582 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     rv = callback(*a, **ka)
+[Thu Oct 29 20:01:08.001594 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/web.py", line 29, in make_main_banner
+[Thu Oct 29 20:01:08.001605 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     image = self.bruce.make_banner('static/in.jpg', 300, 5)
+[Thu Oct 29 20:01:08.001617 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:01:08.001629 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     src_im = Image.open(filename)
+[Thu Oct 29 20:01:08.001641 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:01:08.001652 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:01:08.001664 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] IOError: [Errno 2] No such file or directory: 'static/in.jpg'
+[Thu Oct 29 20:04:59.077935 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] Traceback (most recent call last):
+[Thu Oct 29 20:04:59.077995 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:04:59.078009 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     return route.call(**args)
+[Thu Oct 29 20:04:59.078021 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:04:59.078034 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     rv = callback(*a, **ka)
+[Thu Oct 29 20:04:59.078046 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/web.py", line 29, in make_main_banner
+[Thu Oct 29 20:04:59.078080 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     image = self.bruce.make_banner('static/in.jpg', 300, 5)
+[Thu Oct 29 20:04:59.078093 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:04:59.078105 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     src_im = Image.open(filename)
+[Thu Oct 29 20:04:59.078116 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:04:59.078127 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:04:59.078138 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] IOError: [Errno 2] No such file or directory: 'static/in.jpg'
+[Thu Oct 29 20:05:00.610764 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] Traceback (most recent call last):
+[Thu Oct 29 20:05:00.610832 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:05:00.610860 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     return route.call(**args)
+[Thu Oct 29 20:05:00.610885 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:05:00.610910 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     rv = callback(*a, **ka)
+[Thu Oct 29 20:05:00.610933 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/web.py", line 29, in make_main_banner
+[Thu Oct 29 20:05:00.610958 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     image = self.bruce.make_banner('static/in.jpg', 300, 5)
+[Thu Oct 29 20:05:00.610982 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:05:00.611006 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     src_im = Image.open(filename)
+[Thu Oct 29 20:05:00.611030 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:05:00.611054 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:05:00.611078 2015] [wsgi:error] [pid 21424:tid 139746774533888] [remote ::1:3163] IOError: [Errno 2] No such file or directory: 'static/in.jpg'
+[Thu Oct 29 20:12:17.941585 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852] Traceback (most recent call last):
+[Thu Oct 29 20:12:17.941645 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:12:17.941659 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]     return route.call(**args)
+[Thu Oct 29 20:12:17.941672 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:12:17.941684 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]     rv = callback(*a, **ka)
+[Thu Oct 29 20:12:17.941695 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]   File "/srv/www/bruceapp/web.py", line 29, in make_main_banner
+[Thu Oct 29 20:12:17.941707 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]     image = self.bruce.make_banner('static/in.jpg', 300, 5)
+[Thu Oct 29 20:12:17.941719 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:12:17.941731 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]     src_im = Image.open(filename)
+[Thu Oct 29 20:12:17.941757 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:12:17.941769 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:12:17.941781 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:42852] IOError: [Errno 2] No such file or directory: 'static/in.jpg'
+[Thu Oct 29 20:28:22.772173 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941] Traceback (most recent call last):
+[Thu Oct 29 20:28:22.772239 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:28:22.772254 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]     return route.call(**args)
+[Thu Oct 29 20:28:22.772266 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:28:22.772278 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]     rv = callback(*a, **ka)
+[Thu Oct 29 20:28:22.772290 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]   File "/srv/www/bruceapp/web.py", line 29, in make_main_banner
+[Thu Oct 29 20:28:22.772302 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:28:22.772314 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]     src_im = Image.open(filename)
+[Thu Oct 29 20:28:22.772325 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:28:22.772337 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:28:22.772349 2015] [wsgi:error] [pid 22492:tid 139931765487360] [remote ::1:24941] IOError: [Errno 2] No such file or directory: 'static/in.jpg'
+[Thu Oct 29 20:34:00.736414 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917] Traceback (most recent call last):
+[Thu Oct 29 20:34:00.736482 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:34:00.736497 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]     return route.call(**args)
+[Thu Oct 29 20:34:00.736509 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:34:00.736521 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]     rv = callback(*a, **ka)
+[Thu Oct 29 20:34:00.736533 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 20:34:00.736545 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]     image = self.bruce.make_banner(path+'static/in.jpg', 300, 5)
+[Thu Oct 29 20:34:00.736557 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:34:00.736569 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]     src_im = Image.open(filename)
+[Thu Oct 29 20:34:00.736581 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:34:00.736593 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:34:00.736605 2015] [wsgi:error] [pid 23764:tid 139931757094656] [remote ::1:23917] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticstatic/in.jpg'
+[Thu Oct 29 20:35:46.074868 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367] Traceback (most recent call last):
+[Thu Oct 29 20:35:46.074956 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:35:46.074970 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]     return route.call(**args)
+[Thu Oct 29 20:35:46.074981 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:35:46.074992 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]     rv = callback(*a, **ka)
+[Thu Oct 29 20:35:46.075003 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 20:35:46.075014 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]     image = self.bruce.make_banner(path+'in.jpg', 300, 5)
+[Thu Oct 29 20:35:46.075025 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:35:46.075036 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]     src_im = Image.open(filename)
+[Thu Oct 29 20:35:46.075046 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:35:46.075057 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:35:46.075068 2015] [wsgi:error] [pid 23976:tid 139931765487360] [remote ::1:11367] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticin.jpg'
+[Thu Oct 29 20:35:49.821369 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133] Traceback (most recent call last):
+[Thu Oct 29 20:35:49.821430 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:35:49.821444 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]     return route.call(**args)
+[Thu Oct 29 20:35:49.821457 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:35:49.821469 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]     rv = callback(*a, **ka)
+[Thu Oct 29 20:35:49.821481 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 20:35:49.821493 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]     image = self.bruce.make_banner(path+'in.jpg', 300, 5)
+[Thu Oct 29 20:35:49.821504 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 20:35:49.821516 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]     src_im = Image.open(filename)
+[Thu Oct 29 20:35:49.821528 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 20:35:49.821540 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 20:35:49.821552 2015] [wsgi:error] [pid 23976:tid 139931748701952] [remote ::1:44133] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticin.jpg'
+[Thu Oct 29 20:37:03.602717 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367] Traceback (most recent call last):
+[Thu Oct 29 20:37:03.602779 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:37:03.602790 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]     return route.call(**args)
+[Thu Oct 29 20:37:03.602800 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:37:03.602825 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]     rv = callback(*a, **ka)
+[Thu Oct 29 20:37:03.602836 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]   File "/srv/www/bruceapp/web.py", line 38, in make_main_banner
+[Thu Oct 29 20:37:03.602845 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]     orig_p.save(path+'/prev_pal.png', "PNG")
+[Thu Oct 29 20:37:03.602855 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 20:37:03.602864 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 20:37:03.602873 2015] [wsgi:error] [pid 24113:tid 139931765487360] [remote ::1:11367] IOError: [Errno 13] Permission denied: '/srv/www/bruceapp/static/prev_pal.png'
+[Thu Oct 29 20:40:00.360520 2015] [wsgi:error] [pid 24402:tid 139927392044800] [client ::1:48866] No WSGI daemon process called 'sata' has been configured: /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 20:40:07.234228 2015] [wsgi:error] [pid 24401:tid 139927333295872] [client ::1:48867] No WSGI daemon process called 'sata' has been configured: /srv/www/bruceapp/application.wsgi
+[Thu Oct 29 20:40:08.437127 2015] [wsgi:error] [pid 24401:tid 139927324903168] [client ::1:48868] No WSGI daemon process called 'sata' has been configured: /srv/www/bruceapp/application.wsgi, referer: http://localhost:8080/
+[Thu Oct 29 20:40:08.678548 2015] [wsgi:error] [pid 24401:tid 139927316510464] [client ::1:48869] No WSGI daemon process called 'sata' has been configured: /srv/www/bruceapp/application.wsgi, referer: http://localhost:8080/
+[Thu Oct 29 20:57:05.119121 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111] Traceback (most recent call last):
+[Thu Oct 29 20:57:05.119180 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:57:05.119192 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]     return route.call(**args)
+[Thu Oct 29 20:57:05.119202 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:57:05.119213 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]     rv = callback(*a, **ka)
+[Thu Oct 29 20:57:05.119223 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 20:57:05.119232 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 20:57:05.119242 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 20:57:05.119252 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 20:57:05.119262 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:40111] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticstatic/banner.png'
+[Thu Oct 29 20:59:07.569650 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920] Traceback (most recent call last):
+[Thu Oct 29 20:59:07.569695 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 20:59:07.569707 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]     return route.call(**args)
+[Thu Oct 29 20:59:07.569718 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 20:59:07.569728 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]     rv = callback(*a, **ka)
+[Thu Oct 29 20:59:07.569754 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 20:59:07.569765 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 20:59:07.569774 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 20:59:07.569784 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 20:59:07.569793 2015] [wsgi:error] [pid 25346:tid 140134886209280] [remote ::1:20920] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticstatic/banner.png'
+[Thu Oct 29 21:00:08.046892 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152] Traceback (most recent call last):
+[Thu Oct 29 21:00:08.046963 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:00:08.046977 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]     return route.call(**args)
+[Thu Oct 29 21:00:08.046990 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:00:08.047002 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]     rv = callback(*a, **ka)
+[Thu Oct 29 21:00:08.047014 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 21:00:08.047026 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]     image = self.bruce.make_banner(path+'/in.jpg', 300, 5)
+[Thu Oct 29 21:00:08.047038 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 21:00:08.047050 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]     src_im = Image.open(filename)
+[Thu Oct 29 21:00:08.047062 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 21:00:08.047073 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 21:00:08.047085 2015] [wsgi:error] [pid 25731:tid 140134877816576] [remote ::1:20152] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/in.jpg'
+[Thu Oct 29 21:01:03.539831 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346] Traceback (most recent call last):
+[Thu Oct 29 21:01:03.539894 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:01:03.539906 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]     return route.call(**args)
+[Thu Oct 29 21:01:03.539917 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:01:03.539928 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]     rv = callback(*a, **ka)
+[Thu Oct 29 21:01:03.539937 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 21:01:03.539948 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 21:01:03.539958 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 21:01:03.539968 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 21:01:03.539978 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:7346] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticstatic/banner.png'
+[Thu Oct 29 21:01:09.188889 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111] Traceback (most recent call last):
+[Thu Oct 29 21:01:09.188938 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:01:09.188952 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]     return route.call(**args)
+[Thu Oct 29 21:01:09.188964 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:01:09.188976 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]     rv = callback(*a, **ka)
+[Thu Oct 29 21:01:09.188987 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 21:01:09.188999 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 21:01:09.189010 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 21:01:09.189021 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 21:01:09.189032 2015] [wsgi:error] [pid 25885:tid 140134886209280] [remote ::1:40111] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/staticstatic/banner.png'
+[Thu Oct 29 21:02:12.651401 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896] Traceback (most recent call last):
+[Thu Oct 29 21:02:12.651485 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:02:12.651506 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]     return route.call(**args)
+[Thu Oct 29 21:02:12.651523 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:02:12.651541 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]     rv = callback(*a, **ka)
+[Thu Oct 29 21:02:12.651559 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 21:02:12.651576 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]     image = self.bruce.make_banner(path+'/in.jpg', 300, 5)
+[Thu Oct 29 21:02:12.651593 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 21:02:12.651610 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]     src_im = Image.open(filename)
+[Thu Oct 29 21:02:12.651628 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 21:02:12.651645 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 21:02:12.651662 2015] [wsgi:error] [pid 25996:tid 140134877816576] [remote ::1:19896] IOError: [Errno 2] No such file or directory: '/srv/www/bruceapp/in.jpg'
+[Thu Oct 29 21:03:18.505112 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112] Traceback (most recent call last):
+[Thu Oct 29 21:03:18.505194 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:03:18.505209 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]     return route.call(**args)
+[Thu Oct 29 21:03:18.505221 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:03:18.505262 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]     rv = callback(*a, **ka)
+[Thu Oct 29 21:03:18.505275 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]   File "/srv/www/bruceapp/web.py", line 35, in make_main_banner
+[Thu Oct 29 21:03:18.505287 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]     image = self.bruce.make_banner(path+'static/in.jpg', 300, 5)
+[Thu Oct 29 21:03:18.505298 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]   File "/srv/www/bruceapp/bruce.py", line 56, in make_banner
+[Thu Oct 29 21:03:18.505310 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]     src_im = Image.open(filename)
+[Thu Oct 29 21:03:18.505321 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2288, in open
+[Thu Oct 29 21:03:18.505333 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112]     fp = builtins.open(fp, "rb")
+[Thu Oct 29 21:03:18.505344 2015] [wsgi:error] [pid 26087:tid 140134877816576] [remote ::1:40112] IOError: [Errno 2] No such file or directory: '/srv/www/bruceappstatic/in.jpg'
+[Thu Oct 29 21:03:57.340460 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112] Traceback (most recent call last):
+[Thu Oct 29 21:03:57.340522 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:03:57.340534 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]     return route.call(**args)
+[Thu Oct 29 21:03:57.340545 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:03:57.340555 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]     rv = callback(*a, **ka)
+[Thu Oct 29 21:03:57.340565 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 21:03:57.340575 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 21:03:57.340586 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 21:03:57.340596 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 21:03:57.340606 2015] [wsgi:error] [pid 26178:tid 140134877816576] [remote ::1:40112] IOError: [Errno 2] No such file or directory: '/srv/www/bruceappstatic/banner.png'
+[Thu Oct 29 21:04:58.220919 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649] Traceback (most recent call last):
+[Thu Oct 29 21:04:58.220980 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:04:58.220994 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]     return route.call(**args)
+[Thu Oct 29 21:04:58.221006 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:04:58.221018 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]     rv = callback(*a, **ka)
+[Thu Oct 29 21:04:58.221029 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]   File "/srv/www/bruceapp/web.py", line 40, in make_main_banner
+[Thu Oct 29 21:04:58.221041 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]     image.save(path+"static/banner.png", "PNG")
+[Thu Oct 29 21:04:58.221053 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1697, in save
+[Thu Oct 29 21:04:58.221064 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649]     fp = builtins.open(fp, "wb")
+[Thu Oct 29 21:04:58.221097 2015] [wsgi:error] [pid 26335:tid 139636703966976] [remote ::1:41649] IOError: [Errno 2] No such file or directory: '/srv/www/bruceappstatic/banner.png'
+[Thu Oct 29 21:14:44.806465 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882] Traceback (most recent call last):
+[Thu Oct 29 21:14:44.806525 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 862, in _handle
+[Thu Oct 29 21:14:44.806537 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]     return route.call(**args)
+[Thu Oct 29 21:14:44.806547 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 1732, in wrapper
+[Thu Oct 29 21:14:44.806558 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]     rv = callback(*a, **ka)
+[Thu Oct 29 21:14:44.806567 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]   File "/srv/www/bruceapp/web.py", line 38, in make_main_banner
+[Thu Oct 29 21:14:44.806577 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]     orig_p.save(path+'/static/prev_pal.jpg', "JPG")
+[Thu Oct 29 21:14:44.806587 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1694, in save
+[Thu Oct 29 21:14:44.806597 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]     save_handler = SAVE[format.upper()]
+[Thu Oct 29 21:14:44.806607 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882] KeyError: 'JPG'
