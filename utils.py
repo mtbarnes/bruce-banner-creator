@@ -5,7 +5,7 @@ from colorvecs import Colorvec
 class KMeans():
     '''Module for predicting centroids of vector clusters'''
 
-    def __init__(self, vector_list, cluster_count, means=[], cutoff_iter=5):
+    def __init__(self, vector_list, cluster_count, means=[], cutoff_iter=15):
         self.vector_list = [Colorvec(item) for item in vector_list]
         self.cluster_count = cluster_count
         if means == []:

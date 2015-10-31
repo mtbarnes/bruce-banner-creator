@@ -220,3 +220,83 @@
 [Thu Oct 29 21:14:44.806587 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]   File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1694, in save
 [Thu Oct 29 21:14:44.806597 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882]     save_handler = SAVE[format.upper()]
 [Thu Oct 29 21:14:44.806607 2015] [wsgi:error] [pid 27197:tid 139636678780672] [remote ::1:8882] KeyError: 'JPG'
+[Sat Oct 31 18:01:49.177230 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649] mod_wsgi (pid=9125): Target WSGI script '/srv/www/bruceapp/application.wsgi' cannot be loaded as Python module.
+[Sat Oct 31 18:01:49.177286 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649] mod_wsgi (pid=9125): Exception occurred processing WSGI script '/srv/www/bruceapp/application.wsgi'.
+[Sat Oct 31 18:01:49.177336 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649] Traceback (most recent call last):
+[Sat Oct 31 18:01:49.177382 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/srv/www/bruceapp/application.wsgi", line 9, in <module>
+[Sat Oct 31 18:01:49.177621 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     application = BruceApp()
+[Sat Oct 31 18:01:49.177655 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/srv/www/bruceapp/web.py", line 19, in __init__
+[Sat Oct 31 18:01:49.177768 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     self.route('/demo/<int:image_number>', callback=self.make_banner_and_pal)
+[Sat Oct 31 18:01:49.177797 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 816, in route
+[Sat Oct 31 18:01:49.179331 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     return decorator(callback) if callback else decorator
+[Sat Oct 31 18:01:49.179385 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 814, in decorator
+[Sat Oct 31 18:01:49.179444 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     self.add_route(route)
+[Sat Oct 31 18:01:49.179472 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 773, in add_route
+[Sat Oct 31 18:01:49.179521 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     self.router.add(route.rule, route.method, route, name=route.name)
+[Sat Oct 31 18:01:49.179548 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 331, in add
+[Sat Oct 31 18:01:49.179591 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649]     mask, in_filter, out_filter = self.filters[mode](conf)
+[Sat Oct 31 18:01:49.179671 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41649] KeyError: 'image_number'
+[Sat Oct 31 18:02:50.856469 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369] mod_wsgi (pid=9125): Target WSGI script '/srv/www/bruceapp/application.wsgi' cannot be loaded as Python module.
+[Sat Oct 31 18:02:50.856536 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369] mod_wsgi (pid=9125): Exception occurred processing WSGI script '/srv/www/bruceapp/application.wsgi'.
+[Sat Oct 31 18:02:50.856590 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369] Traceback (most recent call last):
+[Sat Oct 31 18:02:50.856644 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/srv/www/bruceapp/application.wsgi", line 9, in <module>
+[Sat Oct 31 18:02:50.856849 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     application = BruceApp()
+[Sat Oct 31 18:02:50.856889 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/srv/www/bruceapp/web.py", line 19, in __init__
+[Sat Oct 31 18:02:50.857040 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     self.route('/demo/<image_number>', callback=self.make_banner_and_pal)
+[Sat Oct 31 18:02:50.857080 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 816, in route
+[Sat Oct 31 18:02:50.857131 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     return decorator(callback) if callback else decorator
+[Sat Oct 31 18:02:50.857160 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 814, in decorator
+[Sat Oct 31 18:02:50.857204 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     self.add_route(route)
+[Sat Oct 31 18:02:50.857232 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 773, in add_route
+[Sat Oct 31 18:02:50.857276 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     self.router.add(route.rule, route.method, route, name=route.name)
+[Sat Oct 31 18:02:50.857304 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 331, in add
+[Sat Oct 31 18:02:50.857347 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369]     mask, in_filter, out_filter = self.filters[mode](conf)
+[Sat Oct 31 18:02:50.857400 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:40369] KeyError: 'image_number'
+[Sat Oct 31 18:02:52.119687 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] mod_wsgi (pid=9125): Target WSGI script '/srv/www/bruceapp/application.wsgi' cannot be loaded as Python module.
+[Sat Oct 31 18:02:52.119746 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] mod_wsgi (pid=9125): Exception occurred processing WSGI script '/srv/www/bruceapp/application.wsgi'.
+[Sat Oct 31 18:02:52.119797 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] Traceback (most recent call last):
+[Sat Oct 31 18:02:52.119847 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/srv/www/bruceapp/application.wsgi", line 9, in <module>
+[Sat Oct 31 18:02:52.119927 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     application = BruceApp()
+[Sat Oct 31 18:02:52.119959 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/srv/www/bruceapp/web.py", line 19, in __init__
+[Sat Oct 31 18:02:52.120013 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.route('/demo/<image_number>', callback=self.make_banner_and_pal)
+[Sat Oct 31 18:02:52.120046 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 816, in route
+[Sat Oct 31 18:02:52.120125 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     return decorator(callback) if callback else decorator
+[Sat Oct 31 18:02:52.120156 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 814, in decorator
+[Sat Oct 31 18:02:52.120206 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.add_route(route)
+[Sat Oct 31 18:02:52.120236 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 773, in add_route
+[Sat Oct 31 18:02:52.120284 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.router.add(route.rule, route.method, route, name=route.name)
+[Sat Oct 31 18:02:52.120315 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 331, in add
+[Sat Oct 31 18:02:52.120363 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     mask, in_filter, out_filter = self.filters[mode](conf)
+[Sat Oct 31 18:02:52.120412 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] KeyError: 'image_number'
+[Sat Oct 31 18:02:54.029970 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458] mod_wsgi (pid=9125): Target WSGI script '/srv/www/bruceapp/application.wsgi' cannot be loaded as Python module.
+[Sat Oct 31 18:02:54.030037 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458] mod_wsgi (pid=9125): Exception occurred processing WSGI script '/srv/www/bruceapp/application.wsgi'.
+[Sat Oct 31 18:02:54.030096 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458] Traceback (most recent call last):
+[Sat Oct 31 18:02:54.030161 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/srv/www/bruceapp/application.wsgi", line 9, in <module>
+[Sat Oct 31 18:02:54.030246 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     application = BruceApp()
+[Sat Oct 31 18:02:54.030282 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/srv/www/bruceapp/web.py", line 19, in __init__
+[Sat Oct 31 18:02:54.030339 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     self.route('/demo/<image_number>', callback=self.make_banner_and_pal)
+[Sat Oct 31 18:02:54.030371 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 816, in route
+[Sat Oct 31 18:02:54.030424 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     return decorator(callback) if callback else decorator
+[Sat Oct 31 18:02:54.030456 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 814, in decorator
+[Sat Oct 31 18:02:54.030508 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     self.add_route(route)
+[Sat Oct 31 18:02:54.030539 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 773, in add_route
+[Sat Oct 31 18:02:54.030589 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     self.router.add(route.rule, route.method, route, name=route.name)
+[Sat Oct 31 18:02:54.030621 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 331, in add
+[Sat Oct 31 18:02:54.030670 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458]     mask, in_filter, out_filter = self.filters[mode](conf)
+[Sat Oct 31 18:02:54.030725 2015] [wsgi:error] [pid 9125:tid 139636678756096] [remote ::1:22458] KeyError: 'image_number'
+[Sat Oct 31 18:05:48.725984 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] mod_wsgi (pid=9125): Target WSGI script '/srv/www/bruceapp/application.wsgi' cannot be loaded as Python module.
+[Sat Oct 31 18:05:48.726051 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] mod_wsgi (pid=9125): Exception occurred processing WSGI script '/srv/www/bruceapp/application.wsgi'.
+[Sat Oct 31 18:05:48.726137 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] Traceback (most recent call last):
+[Sat Oct 31 18:05:48.726193 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/srv/www/bruceapp/application.wsgi", line 9, in <module>
+[Sat Oct 31 18:05:48.726412 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     application = BruceApp()
+[Sat Oct 31 18:05:48.726450 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/srv/www/bruceapp/web.py", line 19, in __init__
+[Sat Oct 31 18:05:48.726607 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.route('/demo/<number>', callback=self.make_banner_and_pal)
+[Sat Oct 31 18:05:48.726641 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 816, in route
+[Sat Oct 31 18:05:48.726694 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     return decorator(callback) if callback else decorator
+[Sat Oct 31 18:05:48.726725 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 814, in decorator
+[Sat Oct 31 18:05:48.726774 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.add_route(route)
+[Sat Oct 31 18:05:48.726805 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 773, in add_route
+[Sat Oct 31 18:05:48.726853 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     self.router.add(route.rule, route.method, route, name=route.name)
+[Sat Oct 31 18:05:48.726884 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]   File "/usr/local/lib/python2.7/dist-packages/bottle.py", line 331, in add
+[Sat Oct 31 18:05:48.726933 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393]     mask, in_filter, out_filter = self.filters[mode](conf)
+[Sat Oct 31 18:05:48.726983 2015] [wsgi:error] [pid 9125:tid 139636703958784] [remote ::1:41393] KeyError: 'image_number'

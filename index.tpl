@@ -9,7 +9,7 @@
     <link href="static/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="static/bruce.css" rel="stylesheet" type="text/css">
-    <title>Bruce v0.0</title>
+    <title>Bruce v0.1</title>
     <meta name="description" content="Bruce main page">
   </head>
   <body>
@@ -19,7 +19,8 @@
       <div class="col-md-12 text-center header-title" style="padding:50px;">
 	 <h1>Bruce is here to make your website beautiful.</h1>
 	 <br>
-	 <a class="btn btn-lg btn-primary" href="/working">Experience Bruce</a>
+	 <a class="btn btn-lg btn-primary" href="/demo/1">Image 1</a>
+  	 <a class="btn btn-lg btn-primary" href="/demo/2">Image 2</a>
        </div>
      </div>
     </div>

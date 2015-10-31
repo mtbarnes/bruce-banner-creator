@@ -16,7 +16,7 @@ class BruceApp(Bottle):
         super(BruceApp, self).__init__()
         self.path = os.path.dirname(__file__)
         self.route('/', callback=self.landing_index)
-        self.route('/working', callback=self.make_main_banner)
+        self.route('/demo/<number>', callback=self.make_banner_and_pal)
         self.route('/derp', callback=self.derp)
         # self.route('/static/<filename:path>', callback=self.send_static)
         self.bruce = Bruce("test.jpg")
@@ -28,11 +28,11 @@ class BruceApp(Bottle):
         return "four oh four"
 
 
-    def make_main_banner(self):
+    def make_banner_and_pal(self, number):
         path = self.path #os.path.join(self.path, 'static')
         # f = cStringIO.StringIO()
         # bruce = Bruce()
-        image = self.bruce.make_banner(path+'/static/in.jpg', 300, 5)
+        image = self.bruce.make_banner(path+'/static/in'+number+'.jpg', 300, 5)
         orig_b = Image.open(path+'/static/banner.jpg')
         orig_p = Image.open(path+'/static/pal.jpg')
         orig_p.save(path+'/static/prev_pal.jpg', "JPEG")
