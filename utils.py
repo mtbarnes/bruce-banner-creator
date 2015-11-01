@@ -5,7 +5,7 @@ from colorvecs import Colorvec
 class KMeans():
     '''Module for predicting centroids of vector clusters'''
 
-    def __init__(self, vector_list, cluster_count, means=[], cutoff_iter=15):
+    def __init__(self, vector_list, cluster_count, means=[], cutoff_iter=20):
         self.vector_list = [Colorvec(item) for item in vector_list]
         self.cluster_count = cluster_count
         if means == []:
@@ -27,6 +27,7 @@ class KMeans():
         '''return a list of <cluster_count> random means selected from
         self.vector_list.'''
         means = []
+        print(self.vector_list)
         for k in range(0, cluster_count):
             randvec = self.vector_list[randint(0, len(self.vector_list) - 1)]
             means.append(randvec)

@@ -26,14 +26,14 @@ class Bruce():
         '''
         
         src_im = Image.open(infile)
-        # The following line of code needs to be changed!
-        # Resizing to a square (regardless of input dimensions)
-        # totally fucks with color densities.
-        # TBH this never should have happened...
-        src_im = src_im.resize((100, 100), Image.ANTIALIAS) 
-
+        biggest_dim = sorted(src_im.size, reverse=True)[0]
+        size_factor = 250.0/biggest_dim
+        src_im = src_im.resize((int(src_im.size[0]*size_factor),
+                                int(src_im.size[1]*size_factor)), Image.ANTIALIAS) 
+        
         data_points = []        # There's a better way to do this
-        for (count, color) in src_im.getcolors(257*257):
+        for (count, color) in src_im.getcolors(src_im.size[0]*src_im.size[1]):
+            print(color)
             for n in range(count):
                 data_points.append(color)
 
