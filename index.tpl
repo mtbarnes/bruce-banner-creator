@@ -23,9 +23,6 @@
   	 <a class="btn btn-lg btn-primary" href="/demo/2">Image 2</a>
        </div>
      </div>
-     <div class="well">
-       <b>Note:</b> in some browsers (like Safari) you need to reload the page before Bruce can make the magic happen.
-       </div>
     </div>
    </div>
 
@@ -36,11 +33,15 @@
      <div class="row">
        <div class="col-md-12 text-center center-block">
 	 <div class="well">
-	   <h1> Colors: </h1>
+	   <h1>Colors</h1>
 	   <img class="img-responsive center-block", src="/static/pal.jpg" />
+	   <br><br><p>
+	     <b>Note:</b> If Bruce doesn't seem to be working, try reloading
+       this page once to get the magic started.
+	   </p>
 	 </div>
 	 <div class="well">
-	   <h2>Previous banner and palette: </h2>
+	   <h2>Previous banner and palette</h2>
            <img class="img-responsive center-block", src="/static/prev_banner.jpg" />
 	   <br>
 	   <img class="img-responsive center-block", src="/static/prev_pal.jpg" />
