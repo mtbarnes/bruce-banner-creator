@@ -23,8 +23,12 @@
   	 <a class="btn btn-lg btn-primary" href="/demo/2">Image 2</a>
        </div>
      </div>
+     <div class="well">
+       <b>Note:</b> in some browsers (like Safari) you need to reload the page before Bruce can make the magic happen.
+       </div>
     </div>
    </div>
+
    <div class="section"><div class="row"><div class="col-md-12">
 	 <br>
    </div></div></div>
