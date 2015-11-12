@@ -17,8 +17,9 @@
     <div class="container">
      <div class="row">
       <div class="col-md-12 text-center header-title" style="padding:50px;">
-	 <h1>Bruce is here to make your website beautiful.</h1>
+	 <h1>Bruce is going to make websites beautiful.</h1>
 	 <br>
+	 <p>Pick an image and see Bruce at work.</p>
 	 <a class="btn btn-lg btn-primary" href="/demo/1">Image 1</a>
   	 <a class="btn btn-lg btn-primary" href="/demo/2">Image 2</a>
        </div>
