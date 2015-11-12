@@ -19,7 +19,7 @@
       <div class="col-md-12 text-center header-title" style="padding:50px;">
 	 <h1>Bruce is going to make websites beautiful.</h1>
 	 <br>
-	 <p>Pick an image and see Bruce at work.</p>
+	 <h2>Pick an image to see Bruce at work.</h2>
 	 <a class="btn btn-lg btn-primary" href="/demo/1">Image 1</a>
   	 <a class="btn btn-lg btn-primary" href="/demo/2">Image 2</a>
        </div>
