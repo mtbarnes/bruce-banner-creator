@@ -1,0 +1,3 @@
+* AWS Database URL
+mysql://bruceadmin:de4rde4r@digimandb.c79cjt2bv36r.us-west-2.rds.amazonaws.com:3306/bruce_colors
+
