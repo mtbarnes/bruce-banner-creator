@@ -37,7 +37,7 @@ class Bruce():
             for n in range(count):
                 data_points.append(color)
 
-        # Here we instantiate a bruce object with our data
+        # Here we instantiate a kmeans object with our data
         # and call the run() method to calculate centroids
         colormeans = KMeans(data_points, num_colors)
         result = [vec for vec in colormeans.run()]
