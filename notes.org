@@ -1,3 +1,7 @@
+* Scipy dependencies
+sudo apt-get install build-essential libgfortran3 gfortran libatlas-base-dev python-dev liblapack3 libblas3 
+
 * AWS Database URL
 mysql://bruceadmin:de4rde4r@digimandb.c79cjt2bv36r.us-west-2.rds.amazonaws.com:3306/bruce_colors
+
 

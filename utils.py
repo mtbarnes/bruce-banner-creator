@@ -2,6 +2,7 @@ from random import randint
 import colorvecs
 from colorvecs import Colorvec
 
+
 class KMeans():
     '''Module for predicting centroids of vector clusters'''
 

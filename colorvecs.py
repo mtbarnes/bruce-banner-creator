@@ -36,7 +36,6 @@ class Colorvec(Kvec):
             hex_string += "{0:0{1}x}".format(val, 2)
         return hex_string
 
-    
 def distance(point1, point2):
     ''' return the euclidean distance between point1 and point2'''
     sum_sq_diff = 0

@@ -50,7 +50,7 @@ class BruceApp(Bottle):
 
     def landing_index(self):
         indexfile = os.path.join(os.path.dirname(__file__), "index.tpl")
-        return template(indexfile, version='0.1')
+        return template(indexfile, version='0.2')
 
 
 if __name__ == "__main__":
